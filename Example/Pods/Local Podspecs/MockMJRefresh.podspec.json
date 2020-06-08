@@ -1,22 +1,30 @@
 {
   "name": "MockMJRefresh",
   "version": "0.1.0",
-  "summary": "A short description of MockMJRefresh.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/zhaozp/MockMJRefresh",
+  "summary": "MJRefreshOC版改写成Swift版本",
+  "description": "刷新控件",
+  "homepage": "https://github.com/IT-ZhongPeng/MockMJRefresh.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "zhaozp": "zhongpeng.zhao@cicc.com.cn"
+    "zhaozp": "2825605856@qq.com"
   },
   "source": {
-    "git": "https://github.com/zhaozp/MockMJRefresh.git",
+    "git": "https://github.com/IT-ZhongPeng/MockMJRefresh.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "MockMJRefresh/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "MockMJRefresh/Classes/**/*",
+  "resources": "MockMJRefresh/Assets/*.bundle",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "requires_arc": true,
+  "swift_version": "5.0"
 }

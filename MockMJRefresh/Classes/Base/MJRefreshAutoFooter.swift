@@ -166,7 +166,7 @@ open class MJRefreshAutoFooter: MJRefreshFooter{
         return leftTriggerTimes == -1
     }
     
-    override func beginRefreshing() {
+    public override func beginRefreshing() {
         if triggerByDrag && leftTriggerTimes <= 0 && !unlimitedTrigger() {
            return
        }

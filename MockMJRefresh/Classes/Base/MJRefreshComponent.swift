@@ -241,7 +241,7 @@ open class MJRefreshComponent: UIView{
     
     
     // MARK: 进入刷新状态
-    func beginRefreshing() {
+    public func beginRefreshing() {
         UIView.animate(withDuration: TimeInterval(MJRefreshFastAnimationDuration), animations: {
             self.alpha = 1.0
         })
@@ -260,32 +260,32 @@ open class MJRefreshComponent: UIView{
     }
     
     
-    func beginRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
+    public  func beginRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
         beginRefreshingCompletionBlock = completionBlock
         
         beginRefreshing()
     }
     
     // MARK: 结束刷新状态
-    func endRefreshing() {
+    public func endRefreshing() {
         DispatchQueue.main.async { [weak self] in
             self?.state = .idle
         }
     }
     
-    func endRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
+    public func endRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
         endRefreshingCompletionBlock = completionBlock
         
         endRefreshing()
     }
     
     // MARK: 是否正在刷新
-    func isRefreshing() -> Bool {
+    public func isRefreshing() -> Bool {
         return state == .refreshing || state == .willRefresh
     }
     
     // MARK: 根据拖拽进度设置透明度
-    func setPullingPercent(_ pullingPercent: CGFloat) {
+    public func setPullingPercent(_ pullingPercent: CGFloat) {
         self.pullingPercent = pullingPercent
         
         if isRefreshing() {

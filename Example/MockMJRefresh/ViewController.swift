@@ -10,16 +10,82 @@ import UIKit
 import MockMJRefresh
 
 class ViewController: UIViewController {
-
+    
+    var dataArr:[String] = [String]()
+    
+    var num: Int = 0
+    
+    @IBOutlet weak var mockMJRefreshTB: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.mockMJRefreshTB.mj_header = MJRefreshNormalHeader (refreshingBlock: {[weak self] in
+            guard let `self` = self else { return }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.dataArr.removeAll()
+                self.testData()
+                self.mockMJRefreshTB.reloadData()
+                if self.dataArr.count >= 5 {
+                    self.mockMJRefreshTB.mj_footer?.resetNoMoreData()
+                }
+                self.mockMJRefreshTB.mj_header?.endRefreshing()
+            }
+            
+        })
+        
+        self.mockMJRefreshTB.mj_header?.beginRefreshing()
+        
+        self.mockMJRefreshTB.mj_footer = MJRefreshAutoNormalFooter (refreshingBlock: {[weak self] in
+            guard let `self` = self else { return }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                for n in 1...8 {
+                    self.num += n
+                    self.dataArr.append("\(self.num)")
+                }
+                self.mockMJRefreshTB.reloadData()
+                
+                if self.dataArr.count > 20{
+                    self.mockMJRefreshTB.mj_footer?.endRefreshingWithNoMoreData()
+                }else{
+                     self.mockMJRefreshTB.mj_footer?.endRefreshing()
+                }
+               
+            }
+        })
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func testData()  {
+        
+        for n in 1...8 {
+            self.num += n
+            dataArr.append("\(num)")
+        }
     }
-
+    
 }
+
+extension ViewController: UITableViewDataSource , UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell ()
+        cell.textLabel?.text = "\(indexPath.row)"
+        return cell
+        
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    
+}
+
 
