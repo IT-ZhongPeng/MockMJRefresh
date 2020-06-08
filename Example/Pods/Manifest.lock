@@ -1,0 +1,16 @@
+PODS:
+  - MockMJRefresh (0.1.0)
+
+DEPENDENCIES:
+  - MockMJRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  MockMJRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MockMJRefresh: 2d3cacb0fda9b5e11381f3ee2f8694dd4fa38eae
+
+PODFILE CHECKSUM: 9cc78719e2419c95785c19f8820dde104ac59fd2
+
+COCOAPODS: 1.9.0.beta.2

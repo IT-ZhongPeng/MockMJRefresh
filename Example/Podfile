@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MockMJRefresh_Example' do
+  pod 'MockMJRefresh', :path => '../'
+
+  target 'MockMJRefresh_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

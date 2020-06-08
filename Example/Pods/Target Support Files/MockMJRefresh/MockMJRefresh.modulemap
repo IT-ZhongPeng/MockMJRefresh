@@ -1,0 +1,6 @@
+framework module MockMJRefresh {
+  umbrella header "MockMJRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}

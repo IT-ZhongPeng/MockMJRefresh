@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4F6CD073A5D598F461179086963CAB /* MJRefreshBackGifFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55407A34BEFDF1AF5E7DE8CC4FE6E16F /* MJRefreshBackGifFooter.swift */; };
+		128823B556183260949C696553D847FB /* MJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5AD84A61D4B1E1E839FCC501FCA77 /* MJRefreshHeader.swift */; };
+		143F6D027CEEA9735984CA16C224FBC3 /* MJRefreshBackStateFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E53590AD143D120AE95E452E3FB151 /* MJRefreshBackStateFooter.swift */; };
+		14EE2C77E08A23230B42ECD3277E3751 /* MJRefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069C336D9831D2AF937C6F4BD59B6C41 /* MJRefreshConst.swift */; };
+		15D6A9DCE34F740354FF5C2C88E9BB0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		19A1697719617174A579AEF93B8A93F0 /* MJChiBaoZiHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3916D8E3B7C08C8DBBC74B92716CAB /* MJChiBaoZiHeader.swift */; };
+		19AD41B60090FFF84B11A1CD1D43B697 /* MJRefreshAutoStateFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB290B0188C84B00EE2B9D919945F3 /* MJRefreshAutoStateFooter.swift */; };
+		1F78A84F53CBCAEF9C1963A140C592AB /* MockMJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9562B29D7CA345D2F85D1DD1D194ED6 /* MockMJRefresh-dummy.m */; };
+		21F92D21FEAC2144264EA1750B4C8901 /* MJRefreshStateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F194CE3735ADA0627FBFBC69D5D6E158 /* MJRefreshStateHeader.swift */; };
+		24C48ABD341C5AA3416B421AF85DC737 /* MJRefreshBackFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749A1C09A6039523946E112070561D0 /* MJRefreshBackFooter.swift */; };
+		3202B2A9FBA9DCD192CB3D90ADCEF5BD /* MJRefreshAutoGifFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1AF8A0DBBCAB7498934F7472C75DD /* MJRefreshAutoGifFooter.swift */; };
+		326E4775E8B63C9B162BEA5E37B5DF4D /* MJRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066E60EEF445EFEA3870DFCCDFFE2830 /* MJRefreshFooter.swift */; };
+		374CDDB173A5C189FE2D945BF16AA9A2 /* MJRefreshAutoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71A86E0C34E1EF81E635D55C79AA22 /* MJRefreshAutoFooter.swift */; };
+		596C711BC0E3A32EF9EFB944F6DB785C /* UIScrollView+MJRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D48F28036502DB64DDCA98BC196B5 /* UIScrollView+MJRefresh.swift */; };
+		63E9B829680B056A89FE37A639026191 /* UIView+MJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F780DE13E925C6209212F41DCA55C76 /* UIView+MJExtension.swift */; };
+		6C9480173B14BB47C9B0C99988CDF47B /* Pods-MockMJRefresh_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39907B45E57CBFEBED9D6C8BD79203 /* Pods-MockMJRefresh_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775BDECF6DB124B83FE9C01F3546AFA8 /* MockMJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DBFC8C592DD57D31551816638A931 /* MockMJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8260DE604B64601483862B9967499CF4 /* MJRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CAC5E3F528C9121854EA97844CAD7 /* MJRefreshNormalHeader.swift */; };
+		86CA3104601E1E72A52693ACBBD4C39F /* Pods-MockMJRefresh_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B3831BD8C8645D4C548146695CD23E /* Pods-MockMJRefresh_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899821F4A9024EAB33C6B57C2C6176BC /* Pods-MockMJRefresh_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 235452FC3AF1FC65D3A15003E27C74B7 /* Pods-MockMJRefresh_Example-dummy.m */; };
+		8A0DB65BF09C8CD96803F031164A5AF2 /* Pods-MockMJRefresh_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B47209329205E1717C31D9230A7390BE /* Pods-MockMJRefresh_Tests-dummy.m */; };
+		8C8408861A5B12166CD98CE49E738850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8FC5BF60BB3A55D0CACD73F1DB0DF10C /* MJRefreshGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEDC323BC46D920E5B8B868F4CDD83 /* MJRefreshGifHeader.swift */; };
+		A85E707D49F1A3F01E3D8E2B686FF9EC /* MJRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA587D2C504C527748781C8A37E84775 /* MJRefreshComponent.swift */; };
+		B33E9D499EE6999C620B8A66C4F44989 /* MJRefreshConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E68626D431367E154802BC4BC23ECD /* MJRefreshConfig.swift */; };
+		BD7BDCAAEAF28928983B06EC8211FECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C859F573909FF0308D34760312BE3A31 /* MJRefreshBackNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB72BB8BB7D822B8778A3CE2EDCA87 /* MJRefreshBackNormalFooter.swift */; };
+		CE35A617812A65D4A082BADB44C3ED15 /* NSBundle+MJRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977B38AFAEF03E0CCAD84AF16DA7B012 /* NSBundle+MJRefresh.swift */; };
+		E17936200F0EFF1143137799C0964D42 /* UILable+MJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482255D0CD7FF4E604405B08DBE07ED /* UILable+MJExtension.swift */; };
+		E31A6227F4ADC5AADDE124D74DAE7455 /* MJRefreshAutoNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34301EECF3DF770EEA3DEB2C1813D4 /* MJRefreshAutoNormalFooter.swift */; };
+		E7521223429EFD45384101E2B0748CB9 /* UIScrollView+MJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825C7A8AA48EAFD69455DB55305C899 /* UIScrollView+MJExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		164A5287559F7CDE390F66EEFE3A9C71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5875F07FD647A49B242791621FAF91E;
+			remoteInfo = MockMJRefresh;
+		};
+		9E0ACCEBF954319CDC71BD97AA7F01D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87FA6557078DDB01DF4735AA2C5CABE;
+			remoteInfo = "Pods-MockMJRefresh_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		066E60EEF445EFEA3870DFCCDFFE2830 /* MJRefreshFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshFooter.swift; sourceTree = "<group>"; };
+		069C336D9831D2AF937C6F4BD59B6C41 /* MJRefreshConst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MJRefreshConst.swift; path = MockMJRefresh/Classes/MJRefreshConst.swift; sourceTree = "<group>"; };
+		0A6CAC5E3F528C9121854EA97844CAD7 /* MJRefreshNormalHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		0D71A86E0C34E1EF81E635D55C79AA22 /* MJRefreshAutoFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshAutoFooter.swift; sourceTree = "<group>"; };
+		235452FC3AF1FC65D3A15003E27C74B7 /* Pods-MockMJRefresh_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MockMJRefresh_Example-dummy.m"; sourceTree = "<group>"; };
+		26E68626D431367E154802BC4BC23ECD /* MJRefreshConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MJRefreshConfig.swift; path = MockMJRefresh/Classes/MJRefreshConfig.swift; sourceTree = "<group>"; };
+		2A6D48F28036502DB64DDCA98BC196B5 /* UIScrollView+MJRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+MJRefresh.swift"; sourceTree = "<group>"; };
+		30608F5896D90B994ADF062E0BA6BA6F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		31B1AF8A0DBBCAB7498934F7472C75DD /* MJRefreshAutoGifFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshAutoGifFooter.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		367B81B7BFB6FBB2B5742BBD6C94177B /* MockMJRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MockMJRefresh-Info.plist"; sourceTree = "<group>"; };
+		3710F9537991B595B62B36AE1578E855 /* MockMJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MockMJRefresh.modulemap; sourceTree = "<group>"; };
+		3C34301EECF3DF770EEA3DEB2C1813D4 /* MJRefreshAutoNormalFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshAutoNormalFooter.swift; sourceTree = "<group>"; };
+		3F780DE13E925C6209212F41DCA55C76 /* UIView+MJExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+MJExtension.swift"; sourceTree = "<group>"; };
+		4825C7A8AA48EAFD69455DB55305C899 /* UIScrollView+MJExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+MJExtension.swift"; sourceTree = "<group>"; };
+		49A60C7522F8FA2B086130FAFC6BAF9A /* Pods-MockMJRefresh_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockMJRefresh_Example.modulemap"; sourceTree = "<group>"; };
+		4D3916D8E3B7C08C8DBBC74B92716CAB /* MJChiBaoZiHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJChiBaoZiHeader.swift; sourceTree = "<group>"; };
+		529DBFC8C592DD57D31551816638A931 /* MockMJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockMJRefresh-umbrella.h"; sourceTree = "<group>"; };
+		55407A34BEFDF1AF5E7DE8CC4FE6E16F /* MJRefreshBackGifFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshBackGifFooter.swift; sourceTree = "<group>"; };
+		5ED4FBC59D0FD1A6F6FB226BF4B360A8 /* MockMJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MockMJRefresh.debug.xcconfig; sourceTree = "<group>"; };
+		5F39907B45E57CBFEBED9D6C8BD79203 /* Pods-MockMJRefresh_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockMJRefresh_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6482255D0CD7FF4E604405B08DBE07ED /* UILable+MJExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILable+MJExtension.swift"; sourceTree = "<group>"; };
+		667EA5544A21190886DDC73F3EEAAC26 /* Pods-MockMJRefresh_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MockMJRefresh_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6B1F43909E72F3D95CDE0BA7F88E9392 /* MockMJRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MockMJRefresh.release.xcconfig; sourceTree = "<group>"; };
+		8621F839CD1D6C8BB19EC78EE9D7B602 /* MockMJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockMJRefresh-prefix.pch"; sourceTree = "<group>"; };
+		86E53590AD143D120AE95E452E3FB151 /* MJRefreshBackStateFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshBackStateFooter.swift; sourceTree = "<group>"; };
+		88C849E6289A90BF8A755C1F2E845A9E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		88D67E3B115A88D57E5400F497331A50 /* Pods_MockMJRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockMJRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977B38AFAEF03E0CCAD84AF16DA7B012 /* NSBundle+MJRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSBundle+MJRefresh.swift"; sourceTree = "<group>"; };
+		97D7684C08340C60FDD8F3B5B18002AC /* Pods-MockMJRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockMJRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9A7E05CB827808B8A40A0282254B8C1B /* Pods-MockMJRefresh_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MockMJRefresh_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A320E6C79EE45441B29E72F183ED0C98 /* Pods-MockMJRefresh_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockMJRefresh_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AACD677164F821136DE585BB5AE0B521 /* MockMJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockMJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD51F9CCD91C8CE70FB60FF5F680AA66 /* Pods-MockMJRefresh_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockMJRefresh_Example-Info.plist"; sourceTree = "<group>"; };
+		B0FB290B0188C84B00EE2B9D919945F3 /* MJRefreshAutoStateFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshAutoStateFooter.swift; sourceTree = "<group>"; };
+		B47209329205E1717C31D9230A7390BE /* Pods-MockMJRefresh_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MockMJRefresh_Tests-dummy.m"; sourceTree = "<group>"; };
+		C4B3831BD8C8645D4C548146695CD23E /* Pods-MockMJRefresh_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockMJRefresh_Example-umbrella.h"; sourceTree = "<group>"; };
+		C8E5B3F27603D49C859C7BA9538D3049 /* Pods_MockMJRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockMJRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9562B29D7CA345D2F85D1DD1D194ED6 /* MockMJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MockMJRefresh-dummy.m"; sourceTree = "<group>"; };
+		CA587D2C504C527748781C8A37E84775 /* MJRefreshComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshComponent.swift; sourceTree = "<group>"; };
+		CD8547D5E99B4C1A564601697537CA49 /* Pods-MockMJRefresh_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockMJRefresh_Tests.modulemap"; sourceTree = "<group>"; };
+		D7B5AD84A61D4B1E1E839FCC501FCA77 /* MJRefreshHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshHeader.swift; sourceTree = "<group>"; };
+		DD6F2AC2BFADC98AF00A86C108BCACE0 /* Pods-MockMJRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockMJRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E04B34DF65C99A2C78A8F7AD2352972A /* Pods-MockMJRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockMJRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E749A1C09A6039523946E112070561D0 /* MJRefreshBackFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshBackFooter.swift; sourceTree = "<group>"; };
+		E819576CDBBA3B7FEA015F0C17242726 /* Pods-MockMJRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockMJRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F194CE3735ADA0627FBFBC69D5D6E158 /* MJRefreshStateHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshStateHeader.swift; sourceTree = "<group>"; };
+		F4F0E7991DFAE3B22A807E20E0C89C92 /* Pods-MockMJRefresh_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MockMJRefresh_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F5BB72BB8BB7D822B8778A3CE2EDCA87 /* MJRefreshBackNormalFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshBackNormalFooter.swift; sourceTree = "<group>"; };
+		F82D9DE8B4CF0541CECDDE035ECB6DB1 /* Pods-MockMJRefresh_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockMJRefresh_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8780F53C42F723F08A9C9BFAB49789B /* MockMJRefresh.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MockMJRefresh.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FABEDC323BC46D920E5B8B868F4CDD83 /* MJRefreshGifHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MJRefreshGifHeader.swift; sourceTree = "<group>"; };
+		FF0A60951F010874592A18A6F4EA2930 /* Pods-MockMJRefresh_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockMJRefresh_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A270624D9083FAED60A93EED6DF7C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D6A9DCE34F740354FF5C2C88E9BB0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0472A70E5FDFBCF8D550A9ECEE135C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7BDCAAEAF28928983B06EC8211FECA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F4A069F71539EE03804BADE1EDB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8408861A5B12166CD98CE49E738850 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122783D0C2D67ADE3F974FA68A59D441 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				4D3916D8E3B7C08C8DBBC74B92716CAB /* MJChiBaoZiHeader.swift */,
+				FABEDC323BC46D920E5B8B868F4CDD83 /* MJRefreshGifHeader.swift */,
+				0A6CAC5E3F528C9121854EA97844CAD7 /* MJRefreshNormalHeader.swift */,
+				F194CE3735ADA0627FBFBC69D5D6E158 /* MJRefreshStateHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		230BE9B12E4557B2F21950F04A8A954D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3710F9537991B595B62B36AE1578E855 /* MockMJRefresh.modulemap */,
+				C9562B29D7CA345D2F85D1DD1D194ED6 /* MockMJRefresh-dummy.m */,
+				367B81B7BFB6FBB2B5742BBD6C94177B /* MockMJRefresh-Info.plist */,
+				8621F839CD1D6C8BB19EC78EE9D7B602 /* MockMJRefresh-prefix.pch */,
+				529DBFC8C592DD57D31551816638A931 /* MockMJRefresh-umbrella.h */,
+				5ED4FBC59D0FD1A6F6FB226BF4B360A8 /* MockMJRefresh.debug.xcconfig */,
+				6B1F43909E72F3D95CDE0BA7F88E9392 /* MockMJRefresh.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MockMJRefresh";
+			sourceTree = "<group>";
+		};
+		2656EC623F37E5E8C9E08441F90F17E1 /* Pods-MockMJRefresh_Example */ = {
+			isa = PBXGroup;
+			children = (
+				49A60C7522F8FA2B086130FAFC6BAF9A /* Pods-MockMJRefresh_Example.modulemap */,
+				9A7E05CB827808B8A40A0282254B8C1B /* Pods-MockMJRefresh_Example-acknowledgements.markdown */,
+				F82D9DE8B4CF0541CECDDE035ECB6DB1 /* Pods-MockMJRefresh_Example-acknowledgements.plist */,
+				235452FC3AF1FC65D3A15003E27C74B7 /* Pods-MockMJRefresh_Example-dummy.m */,
+				667EA5544A21190886DDC73F3EEAAC26 /* Pods-MockMJRefresh_Example-frameworks.sh */,
+				AD51F9CCD91C8CE70FB60FF5F680AA66 /* Pods-MockMJRefresh_Example-Info.plist */,
+				C4B3831BD8C8645D4C548146695CD23E /* Pods-MockMJRefresh_Example-umbrella.h */,
+				E04B34DF65C99A2C78A8F7AD2352972A /* Pods-MockMJRefresh_Example.debug.xcconfig */,
+				E819576CDBBA3B7FEA015F0C17242726 /* Pods-MockMJRefresh_Example.release.xcconfig */,
+			);
+			name = "Pods-MockMJRefresh_Example";
+			path = "Target Support Files/Pods-MockMJRefresh_Example";
+			sourceTree = "<group>";
+		};
+		52B4843BF0DCC8E92791C37974F748C4 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				55407A34BEFDF1AF5E7DE8CC4FE6E16F /* MJRefreshBackGifFooter.swift */,
+				F5BB72BB8BB7D822B8778A3CE2EDCA87 /* MJRefreshBackNormalFooter.swift */,
+				86E53590AD143D120AE95E452E3FB151 /* MJRefreshBackStateFooter.swift */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		597A354B21298559A1603A8293A882C3 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				625A23A25AD86D4328360D513259E309 /* Auto */,
+				52B4843BF0DCC8E92791C37974F748C4 /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		61CC7E0608438F847441D863D911F7C5 /* Pods-MockMJRefresh_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8547D5E99B4C1A564601697537CA49 /* Pods-MockMJRefresh_Tests.modulemap */,
+				F4F0E7991DFAE3B22A807E20E0C89C92 /* Pods-MockMJRefresh_Tests-acknowledgements.markdown */,
+				A320E6C79EE45441B29E72F183ED0C98 /* Pods-MockMJRefresh_Tests-acknowledgements.plist */,
+				B47209329205E1717C31D9230A7390BE /* Pods-MockMJRefresh_Tests-dummy.m */,
+				FF0A60951F010874592A18A6F4EA2930 /* Pods-MockMJRefresh_Tests-Info.plist */,
+				5F39907B45E57CBFEBED9D6C8BD79203 /* Pods-MockMJRefresh_Tests-umbrella.h */,
+				DD6F2AC2BFADC98AF00A86C108BCACE0 /* Pods-MockMJRefresh_Tests.debug.xcconfig */,
+				97D7684C08340C60FDD8F3B5B18002AC /* Pods-MockMJRefresh_Tests.release.xcconfig */,
+			);
+			name = "Pods-MockMJRefresh_Tests";
+			path = "Target Support Files/Pods-MockMJRefresh_Tests";
+			sourceTree = "<group>";
+		};
+		625A23A25AD86D4328360D513259E309 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				31B1AF8A0DBBCAB7498934F7472C75DD /* MJRefreshAutoGifFooter.swift */,
+				3C34301EECF3DF770EEA3DEB2C1813D4 /* MJRefreshAutoNormalFooter.swift */,
+				B0FB290B0188C84B00EE2B9D919945F3 /* MJRefreshAutoStateFooter.swift */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		8B7592AD73A998698C675A84D6A0DB05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AACD677164F821136DE585BB5AE0B521 /* MockMJRefresh.framework */,
+				C8E5B3F27603D49C859C7BA9538D3049 /* Pods_MockMJRefresh_Example.framework */,
+				88D67E3B115A88D57E5400F497331A50 /* Pods_MockMJRefresh_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E9869D0794475841161DC8CFCF48978 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				597A354B21298559A1603A8293A882C3 /* Footer */,
+				122783D0C2D67ADE3F974FA68A59D441 /* Header */,
+			);
+			name = Custom;
+			path = MockMJRefresh/Classes/Custom;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C7276D8FDEE7AAA3DE9A4131905061AA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2656EC623F37E5E8C9E08441F90F17E1 /* Pods-MockMJRefresh_Example */,
+				61CC7E0608438F847441D863D911F7C5 /* Pods-MockMJRefresh_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DCF18DF95CE3BDF364B0980AFEC05BA7 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8B7592AD73A998698C675A84D6A0DB05 /* Products */,
+				C7276D8FDEE7AAA3DE9A4131905061AA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D29ECA9139B81D5D3732CB0FA8E9E6A1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				88C849E6289A90BF8A755C1F2E845A9E /* LICENSE */,
+				F8780F53C42F723F08A9C9BFAB49789B /* MockMJRefresh.podspec */,
+				30608F5896D90B994ADF062E0BA6BA6F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DCF18DF95CE3BDF364B0980AFEC05BA7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6B9E655803CF72905ADA79511477262 /* MockMJRefresh */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F3958E80FFCE00A4770A2FA8A2C15C50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				977B38AFAEF03E0CCAD84AF16DA7B012 /* NSBundle+MJRefresh.swift */,
+				6482255D0CD7FF4E604405B08DBE07ED /* UILable+MJExtension.swift */,
+				4825C7A8AA48EAFD69455DB55305C899 /* UIScrollView+MJExtension.swift */,
+				2A6D48F28036502DB64DDCA98BC196B5 /* UIScrollView+MJRefresh.swift */,
+				3F780DE13E925C6209212F41DCA55C76 /* UIView+MJExtension.swift */,
+			);
+			name = Extensions;
+			path = MockMJRefresh/Classes/Extensions;
+			sourceTree = "<group>";
+		};
+		F6B9E655803CF72905ADA79511477262 /* MockMJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				26E68626D431367E154802BC4BC23ECD /* MJRefreshConfig.swift */,
+				069C336D9831D2AF937C6F4BD59B6C41 /* MJRefreshConst.swift */,
+				FBDA97F876F266A34AABFB04AC4941F4 /* Base */,
+				8E9869D0794475841161DC8CFCF48978 /* Custom */,
+				F3958E80FFCE00A4770A2FA8A2C15C50 /* Extensions */,
+				D29ECA9139B81D5D3732CB0FA8E9E6A1 /* Pod */,
+				230BE9B12E4557B2F21950F04A8A954D /* Support Files */,
+			);
+			name = MockMJRefresh;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FBDA97F876F266A34AABFB04AC4941F4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D71A86E0C34E1EF81E635D55C79AA22 /* MJRefreshAutoFooter.swift */,
+				E749A1C09A6039523946E112070561D0 /* MJRefreshBackFooter.swift */,
+				CA587D2C504C527748781C8A37E84775 /* MJRefreshComponent.swift */,
+				066E60EEF445EFEA3870DFCCDFFE2830 /* MJRefreshFooter.swift */,
+				D7B5AD84A61D4B1E1E839FCC501FCA77 /* MJRefreshHeader.swift */,
+			);
+			name = Base;
+			path = MockMJRefresh/Classes/Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A0C5A4779684F5AA44A2093730365E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775BDECF6DB124B83FE9C01F3546AFA8 /* MockMJRefresh-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6962ED54CBB22B4E4F8BBC64910A5B09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86CA3104601E1E72A52693ACBBD4C39F /* Pods-MockMJRefresh_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D57908B9E8E81E5B6690D7DDEC8918 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9480173B14BB47C9B0C99988CDF47B /* Pods-MockMJRefresh_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		043431BD228039B0CF7F8D02DBE5F396 /* Pods-MockMJRefresh_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A4D49797C58672BA6A745B153E729F /* Build configuration list for PBXNativeTarget "Pods-MockMJRefresh_Tests" */;
+			buildPhases = (
+				70D57908B9E8E81E5B6690D7DDEC8918 /* Headers */,
+				C57F3D43CED0C9F3C35DC50E2A7179C2 /* Sources */,
+				8E0472A70E5FDFBCF8D550A9ECEE135C /* Frameworks */,
+				A95D239C59906357CB3C149B81676C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3240CE75019D700E31687909CABFFBBC /* PBXTargetDependency */,
+			);
+			name = "Pods-MockMJRefresh_Tests";
+			productName = "Pods-MockMJRefresh_Tests";
+			productReference = 88D67E3B115A88D57E5400F497331A50 /* Pods_MockMJRefresh_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5875F07FD647A49B242791621FAF91E /* MockMJRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 875F30C40AABBA0032AB6202BFA9C72E /* Build configuration list for PBXNativeTarget "MockMJRefresh" */;
+			buildPhases = (
+				0A0C5A4779684F5AA44A2093730365E0 /* Headers */,
+				2B714D40C35D615C6A65B90924CDEDF6 /* Sources */,
+				B28F4A069F71539EE03804BADE1EDB12 /* Frameworks */,
+				828E409F53DAE1CCE7F0BA9B4DDC3952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockMJRefresh;
+			productName = MockMJRefresh;
+			productReference = AACD677164F821136DE585BB5AE0B521 /* MockMJRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F87FA6557078DDB01DF4735AA2C5CABE /* Pods-MockMJRefresh_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED3BA1E53F4F9C5E1FF7E9CCF5E8EAA /* Build configuration list for PBXNativeTarget "Pods-MockMJRefresh_Example" */;
+			buildPhases = (
+				6962ED54CBB22B4E4F8BBC64910A5B09 /* Headers */,
+				60CAFD3768E69BA14CCB62FEED6E8AC0 /* Sources */,
+				4A270624D9083FAED60A93EED6DF7C43 /* Frameworks */,
+				7A59E066099CB556AAD3A27519CCD224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73C91A4566688A4139B878A96D20C465 /* PBXTargetDependency */,
+			);
+			name = "Pods-MockMJRefresh_Example";
+			productName = "Pods-MockMJRefresh_Example";
+			productReference = C8E5B3F27603D49C859C7BA9538D3049 /* Pods_MockMJRefresh_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8B7592AD73A998698C675A84D6A0DB05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5875F07FD647A49B242791621FAF91E /* MockMJRefresh */,
+				F87FA6557078DDB01DF4735AA2C5CABE /* Pods-MockMJRefresh_Example */,
+				043431BD228039B0CF7F8D02DBE5F396 /* Pods-MockMJRefresh_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A59E066099CB556AAD3A27519CCD224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828E409F53DAE1CCE7F0BA9B4DDC3952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95D239C59906357CB3C149B81676C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B714D40C35D615C6A65B90924CDEDF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A1697719617174A579AEF93B8A93F0 /* MJChiBaoZiHeader.swift in Sources */,
+				374CDDB173A5C189FE2D945BF16AA9A2 /* MJRefreshAutoFooter.swift in Sources */,
+				3202B2A9FBA9DCD192CB3D90ADCEF5BD /* MJRefreshAutoGifFooter.swift in Sources */,
+				E31A6227F4ADC5AADDE124D74DAE7455 /* MJRefreshAutoNormalFooter.swift in Sources */,
+				19AD41B60090FFF84B11A1CD1D43B697 /* MJRefreshAutoStateFooter.swift in Sources */,
+				24C48ABD341C5AA3416B421AF85DC737 /* MJRefreshBackFooter.swift in Sources */,
+				0E4F6CD073A5D598F461179086963CAB /* MJRefreshBackGifFooter.swift in Sources */,
+				C859F573909FF0308D34760312BE3A31 /* MJRefreshBackNormalFooter.swift in Sources */,
+				143F6D027CEEA9735984CA16C224FBC3 /* MJRefreshBackStateFooter.swift in Sources */,
+				A85E707D49F1A3F01E3D8E2B686FF9EC /* MJRefreshComponent.swift in Sources */,
+				B33E9D499EE6999C620B8A66C4F44989 /* MJRefreshConfig.swift in Sources */,
+				14EE2C77E08A23230B42ECD3277E3751 /* MJRefreshConst.swift in Sources */,
+				326E4775E8B63C9B162BEA5E37B5DF4D /* MJRefreshFooter.swift in Sources */,
+				8FC5BF60BB3A55D0CACD73F1DB0DF10C /* MJRefreshGifHeader.swift in Sources */,
+				128823B556183260949C696553D847FB /* MJRefreshHeader.swift in Sources */,
+				8260DE604B64601483862B9967499CF4 /* MJRefreshNormalHeader.swift in Sources */,
+				21F92D21FEAC2144264EA1750B4C8901 /* MJRefreshStateHeader.swift in Sources */,
+				1F78A84F53CBCAEF9C1963A140C592AB /* MockMJRefresh-dummy.m in Sources */,
+				CE35A617812A65D4A082BADB44C3ED15 /* NSBundle+MJRefresh.swift in Sources */,
+				E17936200F0EFF1143137799C0964D42 /* UILable+MJExtension.swift in Sources */,
+				E7521223429EFD45384101E2B0748CB9 /* UIScrollView+MJExtension.swift in Sources */,
+				596C711BC0E3A32EF9EFB944F6DB785C /* UIScrollView+MJRefresh.swift in Sources */,
+				63E9B829680B056A89FE37A639026191 /* UIView+MJExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60CAFD3768E69BA14CCB62FEED6E8AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899821F4A9024EAB33C6B57C2C6176BC /* Pods-MockMJRefresh_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57F3D43CED0C9F3C35DC50E2A7179C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DB65BF09C8CD96803F031164A5AF2 /* Pods-MockMJRefresh_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3240CE75019D700E31687909CABFFBBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MockMJRefresh_Example";
+			target = F87FA6557078DDB01DF4735AA2C5CABE /* Pods-MockMJRefresh_Example */;
+			targetProxy = 9E0ACCEBF954319CDC71BD97AA7F01D2 /* PBXContainerItemProxy */;
+		};
+		73C91A4566688A4139B878A96D20C465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MockMJRefresh;
+			target = B5875F07FD647A49B242791621FAF91E /* MockMJRefresh */;
+			targetProxy = 164A5287559F7CDE390F66EEFE3A9C71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13FA55DB1511A15E81B58D6BA67F94FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1F43909E72F3D95CDE0BA7F88E9392 /* MockMJRefresh.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MockMJRefresh/MockMJRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MockMJRefresh/MockMJRefresh-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MockMJRefresh/MockMJRefresh.modulemap";
+				PRODUCT_MODULE_NAME = MockMJRefresh;
+				PRODUCT_NAME = MockMJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D13AA999AEF6EBCA8927519F116E8D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D7684C08340C60FDD8F3B5B18002AC /* Pods-MockMJRefresh_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockMJRefresh_Tests/Pods-MockMJRefresh_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockMJRefresh_Tests/Pods-MockMJRefresh_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0C7B452E62B2783B9392A7710793614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED4FBC59D0FD1A6F6FB226BF4B360A8 /* MockMJRefresh.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MockMJRefresh/MockMJRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MockMJRefresh/MockMJRefresh-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MockMJRefresh/MockMJRefresh.modulemap";
+				PRODUCT_MODULE_NAME = MockMJRefresh;
+				PRODUCT_NAME = MockMJRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB2EC0BDEC8C98D8DD10DCEFE715F926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04B34DF65C99A2C78A8F7AD2352972A /* Pods-MockMJRefresh_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockMJRefresh_Example/Pods-MockMJRefresh_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockMJRefresh_Example/Pods-MockMJRefresh_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B682C93432C80B1A6806EC03BA07BF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6F2AC2BFADC98AF00A86C108BCACE0 /* Pods-MockMJRefresh_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockMJRefresh_Tests/Pods-MockMJRefresh_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockMJRefresh_Tests/Pods-MockMJRefresh_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DE1526E2192B2BE321633995E4A79B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E819576CDBBA3B7FEA015F0C17242726 /* Pods-MockMJRefresh_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockMJRefresh_Example/Pods-MockMJRefresh_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockMJRefresh_Example/Pods-MockMJRefresh_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40A4D49797C58672BA6A745B153E729F /* Build configuration list for PBXNativeTarget "Pods-MockMJRefresh_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B682C93432C80B1A6806EC03BA07BF80 /* Debug */,
+				2D13AA999AEF6EBCA8927519F116E8D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		875F30C40AABBA0032AB6202BFA9C72E /* Build configuration list for PBXNativeTarget "MockMJRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C7B452E62B2783B9392A7710793614 /* Debug */,
+				13FA55DB1511A15E81B58D6BA67F94FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED3BA1E53F4F9C5E1FF7E9CCF5E8EAA /* Build configuration list for PBXNativeTarget "Pods-MockMJRefresh_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2EC0BDEC8C98D8DD10DCEFE715F926 /* Debug */,
+				DE1526E2192B2BE321633995E4A79B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
