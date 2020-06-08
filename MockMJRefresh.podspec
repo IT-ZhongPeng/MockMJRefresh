@@ -10,34 +10,16 @@ Pod::Spec.new do |s|
     s.name             = 'MockMJRefresh'
     s.version          = '0.1.0'
     s.summary          = 'MJRefreshOC版改写成Swift版本'
-    
-    # This description is used to generate tags and improve search results.
-    #   * Think: What does it do? Why did you write it? What is the focus?
-    #   * Try to keep it short, snappy and to the point.
-    #   * Write the description between the DESC delimiters below.
-    #   * Finally, don't worry about the indent, CocoaPods strips it!
-    
-    s.description      = <<-DESC
-    TODO: MJRefresh OC 代码苦力搬运
-    
-    s.homepage         = 'https://github.com/zhaozp/MockMJRefresh'
-    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.description      =  '刷新控件'
+    s.homepage         = 'https://github.com/IT-ZhongPeng/MockMJRefresh.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'zhaozp' => '2825605856@qq.com' }
-    s.source           = { :git => 'https://github.com/zhaozp/MockMJRefresh.git', :tag => s.version.to_s }
-    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-    
+    s.source           = { :git => 'https://github.com/IT-ZhongPeng/MockMJRefresh.git', :tag => s.version.to_s }
     s.ios.deployment_target = '8.0'
-    
+    s.swift_version = '5.0'
     s.source_files = 'MockMJRefresh/Classes/**/*'
     s.resource = 'MockMJRefresh/Assets/*.bundle'
     s.frameworks = 'UIKit', 'Foundation'
-    s.require_arc = true
-    #  s.resource_bundles = {
-    #    'MockMJRefresh' => ['MockMJRefresh/Assets/*']
-    #}
+    s.requires_arc = true
    
-    # s.public_header_files = 'Pod/Classes/**/*.h'
-    
-    # s.dependency 'AFNetworking', '~> 2.3'
 end
