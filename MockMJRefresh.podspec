@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'zhaozp' => '2825605856@qq.com' }
     s.source           = { :git => 'https://github.com/IT-ZhongPeng/MockMJRefresh.git', :tag => s.version.to_s }
+    s.ios.deployment_target  = '9.0'
     s.swift_version = '5.0'
     s.source_files = 'MockMJRefresh/Classes/**/*'
     s.resource = 'MockMJRefresh/Assets/*.bundle'
