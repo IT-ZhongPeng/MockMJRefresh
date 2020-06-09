@@ -40,7 +40,7 @@ zhaozp, 2825605856@qq.com
 
 MockMJRefresh is available under the MIT license. See the LICENSE file for more info.
 
-## preview
+## Preview
 
 
 <img src="https://github.com/IT-ZhongPeng/MockMJRefresh/blob/master/Example/refresh.gif" width=256 />
