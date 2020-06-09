@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class  MJRefreshAutoGifFooter: MJRefreshAutoStateFooter{
+public class  MJRefreshAutoGifFooter: MJRefreshAutoStateFooter{
     
     /// 所有状态对应的动画图片
     var stateImages: [String : [UIImage]] = [String : [UIImage]]()
@@ -50,7 +50,7 @@ open class  MJRefreshAutoGifFooter: MJRefreshAutoStateFooter{
            setImages(images, duration: Double(images?.count ?? 0) * 0.1, for: state)
        }
     
-    open override func prepare() {
+    public override func prepare() {
            super.prepare()
            self.labelLeftInset = 20
        }
@@ -73,7 +73,7 @@ open class  MJRefreshAutoGifFooter: MJRefreshAutoStateFooter{
     }
     
     
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         // 根据状态做事情
         if newState == .refreshing {

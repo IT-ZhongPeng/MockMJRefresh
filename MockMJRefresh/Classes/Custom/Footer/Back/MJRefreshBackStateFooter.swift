@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshBackStateFooter: MJRefreshBackFooter{
+public class MJRefreshBackStateFooter: MJRefreshBackFooter{
     
     public var stateTitles: [String:String] = [String:String]()
     
@@ -36,7 +36,7 @@ open class MJRefreshBackStateFooter: MJRefreshBackFooter{
         super.setUpUI()
         self.addSubview(self.stateLabel)
     }
-    open override func prepare() {
+    public override func prepare() {
         super.prepare()
          // 初始化间距
         self.labelLeftInset = MJRefreshLabelLeftInset
@@ -58,7 +58,7 @@ open class MJRefreshBackStateFooter: MJRefreshBackFooter{
         self.stateLabel.frame = self.bounds
     }
     
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         // 设置状态文字
         self.stateLabel.text = self.stateTitles["\(newState)"]

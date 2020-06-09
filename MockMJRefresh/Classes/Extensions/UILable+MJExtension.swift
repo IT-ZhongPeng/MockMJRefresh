@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UILabel{
+internal extension UILabel{
     
     public class func mj_label() -> Self {
         let label = self.init()

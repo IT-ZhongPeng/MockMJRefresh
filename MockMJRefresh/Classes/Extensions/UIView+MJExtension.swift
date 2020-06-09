@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+ internal extension UIView {
     
     var mj_x: CGFloat {
         get { return frame.origin.x }

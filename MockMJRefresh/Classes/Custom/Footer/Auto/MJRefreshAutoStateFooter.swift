@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshAutoStateFooter: MJRefreshAutoFooter{
+public class MJRefreshAutoStateFooter: MJRefreshAutoFooter{
     
     private var stateTitles: [String : String] = [String : String]()
     
@@ -40,12 +40,12 @@ open class MJRefreshAutoStateFooter: MJRefreshAutoFooter{
         }
     }
     
-    open override func setUpUI() {
+    public override func setUpUI() {
         super.setUpUI()
         self.addSubview(self.stateLabel)
     }
     
-    open override func prepare() {
+    public override func prepare() {
         super.prepare()
         
        // 初始化间距
@@ -70,7 +70,7 @@ open class MJRefreshAutoStateFooter: MJRefreshAutoFooter{
         
     }
     
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         if self.isRefreshingTitleHidden  && state == .refreshing{

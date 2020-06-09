@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIScrollView {
+internal extension UIScrollView {
     var mj_inset: UIEdgeInsets {
         get {
             if #available(iOS 11, *) {

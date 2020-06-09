@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshFooter: MJRefreshComponent{
+public class MJRefreshFooter: MJRefreshComponent{
     /// 忽略多少scrollView的contentInset的bottom
     public var ignoredScrollViewContentInsetBottom: CGFloat = 0.0
     
@@ -19,12 +19,27 @@ open class MJRefreshFooter: MJRefreshComponent{
     
     // MARK: - 重写父类的方法
     
-    open override func prepare() {
+    public override func prepare() {
         super.prepare()
         self.backgroundColor = UIColor.white
         // 设置自己的高度
         self.mj_h = MJRefreshFooterHeight
     }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc public class func footer(withRefreshingBlock refreshBlock: @escaping MJRefreshComponentAction) -> Self{
+        let cmd = self.init()
+        cmd.refreshingBlock = refreshBlock
+        return cmd
+    }
+    
     
     // MARK: - 公共方法
     @objc public func endRefreshingWithNoMoreData() {

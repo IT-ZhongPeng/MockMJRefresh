@@ -14,7 +14,7 @@ let MJRefreshHeaderRefreshing2IdleBoundsKey = "MJRefreshHeaderRefreshing2IdleBou
 let MJRefreshHeaderRefreshingBoundsKey = "MJRefreshHeaderRefreshingBounds"
 
 
-open class MJRefreshHeader: MJRefreshComponent{
+public class MJRefreshHeader: MJRefreshComponent{
     
     private var insetTDelta: CGFloat = 0.0
     
@@ -51,10 +51,14 @@ open class MJRefreshHeader: MJRefreshComponent{
         self.lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey
     }
     
-    
+   @objc public class func header(withRefreshingBlock refreshBlock: @escaping MJRefreshComponentAction) -> Self{
+        let cmd = self.init()
+        cmd.refreshingBlock = refreshBlock
+        return cmd
+    }
     
     // MARK: - 覆盖父类的方法
-    open override func prepare() {
+    public override func prepare() {
         super.prepare()
         self.backgroundColor = UIColor.white
         // 设置高度
@@ -138,7 +142,7 @@ open class MJRefreshHeader: MJRefreshComponent{
             self.pullingPercent = pullingPercent
         }
     }
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         // 根据状态做事情

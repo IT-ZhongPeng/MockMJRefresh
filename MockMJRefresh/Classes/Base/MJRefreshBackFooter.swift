@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshBackFooter: MJRefreshFooter{
+public class MJRefreshBackFooter: MJRefreshFooter{
     
     var lastRefreshCount = 0
     var lastBottomDelta: CGFloat = 0.0

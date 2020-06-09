@@ -9,6 +9,7 @@
 import UIKit
 import MockMJRefresh
 
+
 class ViewController: UIViewController {
     
     var dataArr:[String] = [String]()
@@ -49,9 +50,9 @@ class ViewController: UIViewController {
                 if self.dataArr.count > 20{
                     self.mockMJRefreshTB.mj_footer?.endRefreshingWithNoMoreData()
                 }else{
-                     self.mockMJRefreshTB.mj_footer?.endRefreshing()
+                    self.mockMJRefreshTB.mj_footer?.endRefreshing()
                 }
-               
+                
             }
         })
         
@@ -75,7 +76,7 @@ extension ViewController: UITableViewDataSource , UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell ()
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.text = "\(indexPath.row)" + "点击去OCController"
         return cell
         
     }
@@ -83,6 +84,24 @@ extension ViewController: UITableViewDataSource , UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        DispatchQueue.main.async { [weak self] in
+            
+            
+            let vc = secondViewController()
+             vc.modalPresentationStyle = .overFullScreen
+//            if #available(iOS 13.0, *) {
+//                vc.isModalInPresentation = true
+//            } else {
+//            }
+           
+            self?.present(vc, animated: true, completion: nil)
+        }
+        
+        
     }
     
     

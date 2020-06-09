@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshAutoNormalFooter: MJRefreshAutoStateFooter{
+public class MJRefreshAutoNormalFooter: MJRefreshAutoStateFooter{
     
     public lazy var loadingView: UIActivityIndicatorView = {
            let loadingView = UIActivityIndicatorView ()
@@ -22,7 +22,7 @@ open class MJRefreshAutoNormalFooter: MJRefreshAutoStateFooter{
            return loadingView
        }()
     
-    open override func setUpUI() {
+    public override func setUpUI() {
         super.setUpUI()
         self.addSubview(self.loadingView)
     }
@@ -44,7 +44,7 @@ open class MJRefreshAutoNormalFooter: MJRefreshAutoStateFooter{
     }
     
     
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         // 根据状态做事情

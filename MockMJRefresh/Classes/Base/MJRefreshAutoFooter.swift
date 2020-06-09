@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshAutoFooter: MJRefreshFooter{
+public class MJRefreshAutoFooter: MJRefreshFooter{
     /// 当底部控件出现多少时就自动刷新(默认为1.0，也就是底部控件完全出现时，才会自动刷新)
     public var triggerAutomaticallyRefreshPercent: CGFloat = 0.0
    
@@ -50,7 +50,7 @@ open class MJRefreshAutoFooter: MJRefreshFooter{
     private var triggerByDrag = false
     private var leftTriggerTimes = 0
     
-    open override func willMove(toSuperview newSuperview: UIView?) {
+    public override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         if (newSuperview != nil) {
@@ -70,7 +70,7 @@ open class MJRefreshAutoFooter: MJRefreshFooter{
     }
     
     
-    open override func prepare() {
+    public override func prepare() {
         super.prepare()
         // 默认底部控件100%出现时才会自动刷新
         triggerAutomaticallyRefreshPercent = 1.0
@@ -177,7 +177,7 @@ open class MJRefreshAutoFooter: MJRefreshFooter{
         leftTriggerTimes = autoTriggerTimes
     }
 
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         if self.scrollView == nil{

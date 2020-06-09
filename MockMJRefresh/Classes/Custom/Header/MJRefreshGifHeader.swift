@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshGifHeader: MJRefreshStateHeader{
+public class MJRefreshGifHeader: MJRefreshStateHeader{
     
     /// 所有状态对应的动画图片
     var stateImages: [String : [UIImage]] = [String : [UIImage]]()
@@ -50,12 +50,12 @@ open class MJRefreshGifHeader: MJRefreshStateHeader{
         setImages(images, duration: Double(images?.count ?? 0) * 0.1, for: state)
     }
 
-    open override func prepare() {
+    public override func prepare() {
          super.prepare()
          self.labelLeftInset = 20
      }
     
-    open override func pullingPercentSetAction() {
+    public override func pullingPercentSetAction() {
         super.pullingPercentSetAction()
         let images = self.stateImages["\(MJRefreshState.idle)"]
         if state != .idle || images?.count == 0 {
@@ -97,7 +97,7 @@ open class MJRefreshGifHeader: MJRefreshStateHeader{
         
     }
     
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         // 根据状态做事情
         if state == .pulling || state == .refreshing {

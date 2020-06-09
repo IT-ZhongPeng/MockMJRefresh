@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MJRefreshNormalHeader: MJRefreshStateHeader{
+public class MJRefreshNormalHeader: MJRefreshStateHeader{
     
     public lazy var loadingView: UIActivityIndicatorView = {
         let loadingView = UIActivityIndicatorView ()
@@ -66,7 +66,7 @@ open class MJRefreshNormalHeader: MJRefreshStateHeader{
     }
     
     
-    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         // 根据状态做事情

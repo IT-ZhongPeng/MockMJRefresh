@@ -6,7 +6,7 @@
 //  Copyright © 2020 nmxy. All rights reserved.
 //
 
-open class MJRefreshConfig {
+public class MJRefreshConfig {
     var languageCode: String?
     static let defaultConfig = MJRefreshConfig()
 }

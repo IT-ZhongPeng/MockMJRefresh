@@ -26,9 +26,8 @@ public enum MJRefreshState {
 
 public typealias MJRefreshComponentAction =  () -> Void
 
-open class MJRefreshComponent: UIView{
+public class MJRefreshComponent: UIView{
     
-    #warning("用代理实现吧 ！！！")
     /// 回调对象
     public var refreshingTarget: Any?
     /// 回调方法
@@ -119,27 +118,26 @@ open class MJRefreshComponent: UIView{
         self.refreshingBlock = refreshBlock
     }
     
-    
-    open func  prepare(){
+    public func  prepare(){
         // 基本属性
         autoresizingMask = .flexibleWidth
         backgroundColor = UIColor.clear
     }
     
     
-    open func setUpUI() {}
+    public func setUpUI() {}
     
-    open func pullingPercentSetAction(){}
+    public func pullingPercentSetAction(){}
     
     
-    open override func layoutSubviews() {
+    public override func layoutSubviews() {
         placeSubviews()
         super.layoutSubviews()
     }
     
     public func placeSubviews() { }
     
-    open override func willMove(toSuperview newSuperview: UIView?) {
+    public override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         // 如果不是UIScrollView，不做任何事情
@@ -171,7 +169,7 @@ open class MJRefreshComponent: UIView{
     }
     
     
-    open override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         super.draw(rect)
         
         if state == .willRefresh {
@@ -197,11 +195,11 @@ open class MJRefreshComponent: UIView{
     }
     
     
-    open func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    public func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         self.setNeedsLayout()
     }
     
-    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         // 遇到这些情况就直接返回
         if !isUserInteractionEnabled {
             return
@@ -233,15 +231,11 @@ open class MJRefreshComponent: UIView{
     
     // MARK: - 公共方法
     // MARK: 设置回调对象和回调方法
-    #warning("用代理实现吧 ！！！")
-    func setRefreshingTarget(_ target: Any?, refreshingAction action: Selector) {
-        refreshingTarget = target
-        refreshingAction = action
-    }
+
     
     
     // MARK: 进入刷新状态
-    public func beginRefreshing() {
+   @objc public func beginRefreshing() {
         UIView.animate(withDuration: TimeInterval(MJRefreshFastAnimationDuration), animations: {
             self.alpha = 1.0
         })
@@ -260,32 +254,32 @@ open class MJRefreshComponent: UIView{
     }
     
     
-    public  func beginRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
+  @objc  public  func beginRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
         beginRefreshingCompletionBlock = completionBlock
         
         beginRefreshing()
     }
     
     // MARK: 结束刷新状态
-    public func endRefreshing() {
+   @objc public func endRefreshing() {
         DispatchQueue.main.async { [weak self] in
             self?.state = .idle
         }
     }
     
-    public func endRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
+   @objc public func endRefreshing(withCompletionBlock completionBlock: @escaping () -> Void) {
         endRefreshingCompletionBlock = completionBlock
         
         endRefreshing()
     }
     
     // MARK: 是否正在刷新
-    public func isRefreshing() -> Bool {
+   @objc public func isRefreshing() -> Bool {
         return state == .refreshing || state == .willRefresh
     }
     
     // MARK: 根据拖拽进度设置透明度
-    public func setPullingPercent(_ pullingPercent: CGFloat) {
+   @objc public func setPullingPercent(_ pullingPercent: CGFloat) {
         self.pullingPercent = pullingPercent
         
         if isRefreshing() {
@@ -298,7 +292,7 @@ open class MJRefreshComponent: UIView{
     }
     
     // MARK: - 内部方法
-    func executeRefreshingCallback() {
+  @objc  func executeRefreshingCallback() {
         
         DispatchQueue.main.async {
             if self.refreshingBlock != nil{

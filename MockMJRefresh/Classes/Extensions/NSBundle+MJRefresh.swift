@@ -11,7 +11,7 @@ import UIKit
 
 
 
-extension Bundle{
+internal extension Bundle{
     
     static var refreshBundle: Bundle? = nil
     
