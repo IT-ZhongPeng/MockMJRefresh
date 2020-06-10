@@ -11,7 +11,7 @@ import UIKit
 
 internal extension UILabel{
     
-    public class func mj_label() -> Self {
+    class func mj_label() -> Self {
         let label = self.init()
         label.font = MJRefreshLabelFont
         label.textColor = MJRefreshLabelTextColor
@@ -21,7 +21,7 @@ internal extension UILabel{
         return label
     }
     
-    public var mj_textWidth: CGFloat{
+    var mj_textWidth: CGFloat{
         var stringWidth: CGFloat = 0
                let size = CGSize (width: 100000, height: 100000)
 

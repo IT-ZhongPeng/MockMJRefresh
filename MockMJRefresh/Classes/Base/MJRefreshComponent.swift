@@ -26,7 +26,7 @@ public enum MJRefreshState {
 
 public typealias MJRefreshComponentAction =  () -> Void
 
-public class MJRefreshComponent: UIView{
+open class MJRefreshComponent: UIView{
     
     /// 回调对象
     public var refreshingTarget: Any?
@@ -118,26 +118,33 @@ public class MJRefreshComponent: UIView{
         self.refreshingBlock = refreshBlock
     }
     
-    public func  prepare(){
+    open class func refreshingBlock (_ refreshBlock: @escaping MJRefreshComponentAction) -> Self{
+        let cmd = self.init()
+        cmd.refreshingBlock = refreshBlock
+        return cmd
+    }
+    
+    
+    open func  prepare(){
         // 基本属性
         autoresizingMask = .flexibleWidth
         backgroundColor = UIColor.clear
     }
     
     
-    public func setUpUI() {}
+    open func setUpUI() {}
     
-    public func pullingPercentSetAction(){}
+    open func pullingPercentSetAction(){}
     
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         placeSubviews()
         super.layoutSubviews()
     }
     
-    public func placeSubviews() { }
+    open func placeSubviews() { }
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
+    open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         // 如果不是UIScrollView，不做任何事情
@@ -195,7 +202,7 @@ public class MJRefreshComponent: UIView{
     }
     
     
-    public func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    open func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         self.setNeedsLayout()
     }
     

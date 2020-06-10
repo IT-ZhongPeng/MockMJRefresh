@@ -8,6 +8,7 @@
 
 #import "secondViewController.h"
 #import "MockMJRefresh_Example-Bridging-Header.h"
+
 @interface secondViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -16,11 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
-    UITableView *mainTB = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 20) style:UITableViewStylePlain];
+    UITableView *mainTB = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStyleGrouped];
     mainTB.delegate = self;
     mainTB.dataSource = self;
     [self.view addSubview:mainTB];
+    
+    
+    
     
     mainTB.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
@@ -46,7 +51,7 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     UITableViewCell * cell = [[UITableViewCell alloc] init];
-    cell.textLabel.text = @"点击返回";
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     return cell;
 }
 
@@ -55,12 +60,8 @@
     return 1;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

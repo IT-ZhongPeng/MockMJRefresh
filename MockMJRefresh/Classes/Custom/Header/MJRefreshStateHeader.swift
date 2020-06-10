@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-public class MJRefreshStateHeader: MJRefreshHeader{
+open class MJRefreshStateHeader: MJRefreshHeader{
     /// 利用这个block来决定显示的更新时间文字
     public var lastUpdatedTimeText: ((_ lastUpdatedTime: Date?) -> String)?
     
@@ -92,19 +92,13 @@ public class MJRefreshStateHeader: MJRefreshHeader{
         
     }
     
-    public override func setUpUI() {
+    open override func setUpUI() {
         super.setUpUI()
         self.addSubview(self.stateLabel)
         self.addSubview(self.lastUpdatedTimeLabel)
     }
     
-    convenience public init (refreshingBlock refreshBlock: @escaping MJRefreshComponentAction){
-        self.init()
-        self.refreshingBlock = refreshBlock
-    }
-    
-    
-    public override func prepare() {
+    open override func prepare() {
         super.prepare()
         
         // 初始化间距
@@ -117,7 +111,7 @@ public class MJRefreshStateHeader: MJRefreshHeader{
 
     }
     
-    public override func placeSubviews() {
+    open override func placeSubviews() {
         super.placeSubviews()
         
         if self.stateLabel.isHidden {
@@ -152,7 +146,7 @@ public class MJRefreshStateHeader: MJRefreshHeader{
     }
     
     
-    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         // 设置状态文字

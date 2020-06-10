@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-public class MJRefreshBackFooter: MJRefreshFooter{
+open class MJRefreshBackFooter: MJRefreshFooter{
     
     var lastRefreshCount = 0
     var lastBottomDelta: CGFloat = 0.0
     
     // MARK: - 初始化
-    public override func willMove(toSuperview newSuperview: UIView?) {
+    open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         self.scrollViewContentSizeDidChange(nil)
     }
@@ -78,7 +78,7 @@ public class MJRefreshBackFooter: MJRefreshFooter{
         mj_y = max(contentHeight, scrollHeight)
     }
     
-    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         // MARK: - 根据状态来设置属性

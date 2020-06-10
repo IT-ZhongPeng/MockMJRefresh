@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class MJRefreshGifHeader: MJRefreshStateHeader{
+open class MJRefreshGifHeader: MJRefreshStateHeader{
     
     /// 所有状态对应的动画图片
     var stateImages: [String : [UIImage]] = [String : [UIImage]]()
@@ -22,7 +22,7 @@ public class MJRefreshGifHeader: MJRefreshStateHeader{
         return gifView
     }()
     
-    public override func setUpUI() {
+    open override func setUpUI() {
         super.setUpUI()
         
         self.addSubview(self.gifView)
@@ -50,12 +50,12 @@ public class MJRefreshGifHeader: MJRefreshStateHeader{
         setImages(images, duration: Double(images?.count ?? 0) * 0.1, for: state)
     }
 
-    public override func prepare() {
+    open override func prepare() {
          super.prepare()
          self.labelLeftInset = 20
      }
     
-    public override func pullingPercentSetAction() {
+    open override func pullingPercentSetAction() {
         super.pullingPercentSetAction()
         let images = self.stateImages["\(MJRefreshState.idle)"]
         if state != .idle || images?.count == 0 {
@@ -74,7 +74,7 @@ public class MJRefreshGifHeader: MJRefreshStateHeader{
     
  
     
-    public override func placeSubviews() {
+    open override func placeSubviews() {
         super.placeSubviews()
         if self.gifView.constraints.count > 0 {
             return
@@ -97,7 +97,7 @@ public class MJRefreshGifHeader: MJRefreshStateHeader{
         
     }
     
-    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         // 根据状态做事情
         if state == .pulling || state == .refreshing {

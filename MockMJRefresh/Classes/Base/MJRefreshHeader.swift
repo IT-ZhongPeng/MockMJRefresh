@@ -14,7 +14,7 @@ let MJRefreshHeaderRefreshing2IdleBoundsKey = "MJRefreshHeaderRefreshing2IdleBou
 let MJRefreshHeaderRefreshingBoundsKey = "MJRefreshHeaderRefreshingBounds"
 
 
-public class MJRefreshHeader: MJRefreshComponent{
+open class MJRefreshHeader: MJRefreshComponent{
     
     private var insetTDelta: CGFloat = 0.0
     
@@ -45,27 +45,27 @@ public class MJRefreshHeader: MJRefreshComponent{
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func setUpUI() {
+    open override func setUpUI() {
         super.setUpUI()
         // 设置key
         self.lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey
     }
     
-   @objc public class func header(withRefreshingBlock refreshBlock: @escaping MJRefreshComponentAction) -> Self{
+   @objc open class func header(withRefreshingBlock refreshBlock: @escaping MJRefreshComponentAction) -> Self{
         let cmd = self.init()
         cmd.refreshingBlock = refreshBlock
         return cmd
     }
     
     // MARK: - 覆盖父类的方法
-    public override func prepare() {
+    open override func prepare() {
         super.prepare()
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.clear
         // 设置高度
         self.mj_h = MJRefreshHeaderHeight
     }
     
-    public override func placeSubviews() {
+    open override func placeSubviews() {
         super.placeSubviews()
         
         // 设置y值(当自己的高度发生改变了，肯定要重新调整Y值，所以放到placeSubviews方法中设置y值)
@@ -142,7 +142,8 @@ public class MJRefreshHeader: MJRefreshComponent{
             self.pullingPercent = pullingPercent
         }
     }
-    public override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
+    
+    open override func stateSetAction(oldState: MJRefreshState, newState: MJRefreshState) {
         super.stateSetAction(oldState: oldState, newState: newState)
         
         // 根据状态做事情

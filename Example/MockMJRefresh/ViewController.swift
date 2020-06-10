@@ -21,9 +21,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mockMJRefreshTB.mj_header = MJRefreshNormalHeader (refreshingBlock: {[weak self] in
-            guard let `self` = self else { return }
+//        self.mockMJRefreshTB.mj_header = MJRefreshNormalHeader (refreshingBlock: {[weak self] in
+//            guard let `self` = self else { return }
+//
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//                self.dataArr.removeAll()
+//                self.testData()
+//                self.mockMJRefreshTB.reloadData()
+//                if self.dataArr.count >= 5 {
+//                    self.mockMJRefreshTB.mj_footer?.resetNoMoreData()
+//                }
+//                self.mockMJRefreshTB.mj_header?.endRefreshing()
+//            }
+//
+//        })
+        
+        self.mockMJRefreshTB.mj_header =  MJChiBaoZiHeader.refreshingBlock({[weak self] in
             
+            guard let `self` = self else { return }
+
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self.dataArr.removeAll()
                 self.testData()
@@ -35,6 +51,7 @@ class ViewController: UIViewController {
             }
             
         })
+        
         
         self.mockMJRefreshTB.mj_header?.beginRefreshing()
         
@@ -89,16 +106,9 @@ extension ViewController: UITableViewDataSource , UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         DispatchQueue.main.async { [weak self] in
-            
-            
             let vc = secondViewController()
              vc.modalPresentationStyle = .overFullScreen
-//            if #available(iOS 13.0, *) {
-//                vc.isModalInPresentation = true
-//            } else {
-//            }
-           
-            self?.present(vc, animated: true, completion: nil)
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
         
         
