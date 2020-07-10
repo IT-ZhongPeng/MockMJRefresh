@@ -21,7 +21,7 @@ open class MJRefreshStateHeader: MJRefreshHeader{
     private var stateTitles: [String : String] = [String : String]()
     
     // MARK: - 公共方法
-    func setTitle(_ title: String?, for state: MJRefreshState) {
+   public func setTitle(_ title: String?, for state: MJRefreshState) {
         if title == nil {
             return
         }

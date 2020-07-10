@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'MockMJRefresh'
-s.version          = '0.1.0'
+s.version          = '0.1.1'
 s.summary          = 'MJRefreshOC版改写成Swift版本'
 s.description      =  '刷新控件'
 s.homepage         = 'https://github.com/IT-ZhongPeng/MockMJRefresh.git'

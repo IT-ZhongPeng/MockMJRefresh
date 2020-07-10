@@ -20,7 +20,7 @@ open class MJRefreshBackStateFooter: MJRefreshBackFooter{
     
     
     // MARK: - 公共方法
-    func setTitle(_ title: String?, for state: MJRefreshState) {
+    public func setTitle(_ title: String?, for state: MJRefreshState) {
         if title == nil {
             return
         }
@@ -28,7 +28,7 @@ open class MJRefreshBackStateFooter: MJRefreshBackFooter{
         stateLabel.text = stateTitles["\(self.state ?? MJRefreshState.idle )"]
     }
 
-    func title(for state: MJRefreshState) -> String{
+    public func title(for state: MJRefreshState) -> String{
         return stateTitles["\(state)"] ?? ""
     }
 
