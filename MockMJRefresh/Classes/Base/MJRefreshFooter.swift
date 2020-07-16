@@ -53,6 +53,7 @@ open class MJRefreshFooter: MJRefreshComponent{
     @objc public func resetNoMoreData(){
         DispatchQueue.main.async {[weak self] in
             guard let `self` = self else { return }
+            self.isHidden = false
             self.state = .idle
         }
     }

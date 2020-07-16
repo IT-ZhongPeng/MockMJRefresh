@@ -15,18 +15,14 @@ open class MJRefreshAutoFooter: MJRefreshFooter{
    
     
     public var automaticallyRefresh: Bool = false
-    private var _isHidden: Bool = false
+//    private var lastHidden: Bool = false
     public override var isHidden: Bool{
-        get {
-            return _isHidden
-        }
-        set {
-            let lastHidden = _isHidden
-            _isHidden = newValue
+        willSet{
             
-            if !lastHidden && newValue {
+            let lastHidden = self.isHidden
+            
+            if  !lastHidden && newValue {
                 state = .idle
-
                 scrollView?.mj_insetB -= mj_h
             } else if lastHidden && !newValue {
                 scrollView?.mj_insetB += mj_h

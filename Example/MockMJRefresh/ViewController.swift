@@ -63,7 +63,6 @@ class ViewController: UIViewController {
                     self.dataArr.append("\(self.num)")
                 }
                 self.mockMJRefreshTB.reloadData()
-                
                 if self.dataArr.count > 20{
                     self.mockMJRefreshTB.mj_footer?.endRefreshingWithNoMoreData()
                 }else{
