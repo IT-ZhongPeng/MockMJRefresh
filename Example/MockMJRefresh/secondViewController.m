@@ -21,7 +21,7 @@
     UITableView *mainTB = [[UITableView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStyleGrouped];
     mainTB.delegate = self;
     mainTB.dataSource = self;
-    mainTB.backgroundColor = [UIColor redColor];
+    mainTB.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:mainTB];
     
     
