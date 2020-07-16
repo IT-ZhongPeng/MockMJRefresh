@@ -40,10 +40,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eSO-wC-l6F" secondAttribute="bottom" id="BWo-p2-Rnx"/>
-                            <constraint firstItem="eSO-wC-l6F" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="FOj-0G-Bld"/>
-                            <constraint firstAttribute="trailing" secondItem="eSO-wC-l6F" secondAttribute="trailing" id="SLg-Gd-XJP"/>
-                            <constraint firstItem="eSO-wC-l6F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="i6A-u0-JrK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eSO-wC-l6F" secondAttribute="bottom" id="3BR-iJ-bpS"/>
+                            <constraint firstItem="eSO-wC-l6F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RyJ-6w-o1x"/>
+                            <constraint firstItem="eSO-wC-l6F" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="VCq-Vr-Fbv"/>
+                            <constraint firstAttribute="trailing" secondItem="eSO-wC-l6F" secondAttribute="trailing" id="hbV-AM-Mjy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ss3-nj-tAn"/>
