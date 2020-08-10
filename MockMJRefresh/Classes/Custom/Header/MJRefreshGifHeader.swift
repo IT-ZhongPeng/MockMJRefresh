@@ -101,7 +101,7 @@ open class MJRefreshGifHeader: MJRefreshStateHeader{
         super.stateSetAction(oldState: oldState, newState: newState)
         // 根据状态做事情
         if state == .pulling || state == .refreshing {
-            let images = stateImages["\(state!)"]
+            let images = stateImages["\(state)"]
             if images?.count == 0 {
                 return
             }
@@ -113,7 +113,7 @@ open class MJRefreshGifHeader: MJRefreshStateHeader{
             } else {
                 // 多张图片
                 gifView.animationImages = images
-                gifView.animationDuration = CFTimeInterval((stateDurations["\(state!)"])?.doubleValue ?? 0.25)
+                gifView.animationDuration = CFTimeInterval((stateDurations["\(state)"])?.doubleValue ?? 0.25)
                 gifView.startAnimating()
             }
         } else if state == .idle {

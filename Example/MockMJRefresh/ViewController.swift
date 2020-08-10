@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        self.mockMJRefreshTB.mj_header = MJRefreshNormalHeader (refreshingBlock: {[weak self] in
-//            guard let `self` = self else { return }
+//            guard let self = self else { return }
 //
 //            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 //                self.dataArr.removeAll()
@@ -37,8 +37,8 @@ class ViewController: UIViewController {
 //        })
         
         self.mockMJRefreshTB.mj_header =  MJChiBaoZiHeader.refreshingBlock({[weak self] in
-            
-            guard let `self` = self else { return }
+
+            guard let self = self else { return }
 
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self.dataArr.removeAll()
@@ -49,14 +49,14 @@ class ViewController: UIViewController {
                 }
                 self.mockMJRefreshTB.mj_header?.endRefreshing()
             }
-            
+
         })
         
         
         self.mockMJRefreshTB.mj_header?.beginRefreshing()
         
         self.mockMJRefreshTB.mj_footer = MJRefreshAutoNormalFooter (refreshingBlock: {[weak self] in
-            guard let `self` = self else { return }
+            guard let self = self else { return }
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 for n in 1...8 {
                     self.num += n

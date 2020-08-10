@@ -233,7 +233,7 @@ open class MJRefreshHeader: MJRefreshComponent{
         if !isCollectionViewAnimationBug {
             
             DispatchQueue.main.async { [weak self] in
-                guard let `self` = self else { return }
+                guard let self = self else { return }
                 
                 UIView.animate(withDuration: TimeInterval(MJRefreshFastAnimationDuration), animations: {
                     if self.scrollView?.panGestureRecognizer.state != .cancelled {

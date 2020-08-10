@@ -22,7 +22,7 @@ open class MJRefreshAutoFooter: MJRefreshFooter{
             let lastHidden = self.isHidden
             
             if  !lastHidden && newValue {
-                state = .idle
+                self.state = .idle
                 scrollView?.mj_insetB -= mj_h
             } else if lastHidden && !newValue {
                 scrollView?.mj_insetB += mj_h

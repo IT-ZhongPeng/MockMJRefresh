@@ -63,13 +63,36 @@ open class MJRefreshComponent: UIView{
     public  var endRefreshingAnimationBeginAction: MJRefreshComponentAction?
     
     /// 刷新状态 一般交给子类内部实现
-    public var state: MJRefreshState?{
-        
-        didSet{
-            DispatchQueue.main.async { [weak self] in
-                self?.stateSetAction(oldState: oldValue ?? .idle, newState: self?.state ?? .idle)
-            }
+    public var _state: MJRefreshState = .idle
+     public var _OldState: MJRefreshState = .idle
+    public var state: MJRefreshState {
+        set{
+          
+           
+            _state = newValue
+            self.stateSetAction(oldState: _OldState , newState: newValue)
+            _OldState = newValue
+            
         }
+        
+        get{
+            
+            return _state
+        }
+        
+        
+        
+//        didSet{
+//            DispatchQueue.main.async { [weak self] in
+//                guard let self = self else { return }
+//
+//                print("newState \(self.state)")
+//                if oldValue != self.state{
+//                    self.stateSetAction(oldState: oldValue ?? .idle, newState: self.state ?? .idle)
+//                }
+//
+//            }
+//        }
         
     }
     

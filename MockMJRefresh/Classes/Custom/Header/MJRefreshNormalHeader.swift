@@ -93,13 +93,13 @@ public class MJRefreshNormalHeader: MJRefreshStateHeader{
                     self.arrowView.transform = CGAffineTransform.identity
                 })
             }
-        }else if state == .pulling {
+        }else if self.state == .pulling {
             loadingView.stopAnimating()
             arrowView.isHidden = false
             UIView.animate(withDuration: TimeInterval(MJRefreshFastAnimationDuration), animations: {
                 self.arrowView.transform = CGAffineTransform(rotationAngle: 0.000001 - .pi)
             })
-        } else if state == .refreshing {
+        } else if self.state == .refreshing {
             loadingView.alpha = 1.0 // 防止refreshing -> idle的动画完毕动作没有被执行
             loadingView.startAnimating()
             arrowView.isHidden = true
