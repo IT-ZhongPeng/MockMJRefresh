@@ -27,6 +27,8 @@ open class MJRefreshBackFooter: MJRefreshFooter{
         // 当前的contentOffset
         let currentOffsetY = scrollView?.mj_offsetY ?? 0
         
+        self.scrollViewOriginalInset = scrollView?.mj_inset ?? .zero
+        
         // 尾部控件刚好出现的offsetY
         let happenOffsetY = self.happenOffsetY()
         // 如果是向下滚动到看不见尾部控件，直接返回

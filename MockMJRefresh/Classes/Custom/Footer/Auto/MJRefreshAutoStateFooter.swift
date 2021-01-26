@@ -27,7 +27,7 @@ open class MJRefreshAutoStateFooter: MJRefreshAutoFooter{
             return
         }
         stateTitles["\(state)"] = title ?? ""
-        stateLabel.text = stateTitles["\(self.state ?? MJRefreshState.idle )"]
+        stateLabel.text = stateTitles["\(self.state )"]
     }
 
    public func title(for state: MJRefreshState) -> String{

@@ -51,11 +51,11 @@ class ViewController: UIViewController {
             }
 
         })
-        
+//        self.mockMJRefreshTB.mj_footer?.ignoredScrollViewContentInsetBottom = 34.0
         
         self.mockMJRefreshTB.mj_header?.beginRefreshing()
         
-        self.mockMJRefreshTB.mj_footer = MJRefreshAutoNormalFooter (refreshingBlock: {[weak self] in
+        self.mockMJRefreshTB.mj_footer = MJRefreshBackNormalFooter (refreshingBlock: {[weak self] in
             guard let self = self else { return }
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 for n in 1...8 {
@@ -63,11 +63,12 @@ class ViewController: UIViewController {
                     self.dataArr.append("\(self.num)")
                 }
                 self.mockMJRefreshTB.reloadData()
-                if self.dataArr.count > 20{
-                    self.mockMJRefreshTB.mj_footer?.endRefreshingWithNoMoreData()
-                }else{
-                    self.mockMJRefreshTB.mj_footer?.endRefreshing()
-                }
+                self.mockMJRefreshTB.mj_footer?.endRefreshing()
+//                if self.dataArr.count > 20{
+//                    self.mockMJRefreshTB.mj_footer?.endRefreshingWithNoMoreData()
+//                }else{
+//
+//                }
                 
             }
         })

@@ -24,8 +24,8 @@ internal extension UIScrollView {
             var inset = self.contentInset
             inset.top = newValue
             if #available(iOS 11, *) {
-                if NSObject.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
-                    inset.top -= self.safeAreaInsets.top - self.contentInset.top
+                if UIScrollView.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
+                    inset.top -= (self.safeAreaInsets.top - self.contentInset.top)
                 }
             }
             self.contentInset = inset
@@ -37,8 +37,8 @@ internal extension UIScrollView {
             var inset = self.contentInset
             inset.bottom = newValue
             if #available(iOS 11, *) {
-                if NSObject.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
-                    inset.bottom -= self.safeAreaInsets.bottom - self.contentInset.bottom
+                if UIScrollView.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
+                    inset.bottom -= (self.adjustedContentInset.bottom - self.contentInset.bottom)
                 }
             }
             self.contentInset = inset
@@ -50,8 +50,8 @@ internal extension UIScrollView {
             var inset = self.contentInset
             inset.left = newValue
             if #available(iOS 11, *) {
-                if NSObject.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
-                    inset.left -= self.safeAreaInsets.left - self.contentInset.left
+                if UIScrollView.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
+                    inset.left -= (self.adjustedContentInset.left - self.contentInset.left)
                 }
             }
             self.contentInset = inset
@@ -63,8 +63,8 @@ internal extension UIScrollView {
             var inset = self.contentInset
             inset.right = newValue
             if #available(iOS 11, *) {
-                if NSObject.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
-                    inset.right -= self.safeAreaInsets.right - self.contentInset.right
+                if UIScrollView.instancesRespond(to: #selector(getter: UIScrollView.adjustedContentInset)) {
+                    inset.right -= (self.adjustedContentInset.right - self.contentInset.right)
                 }
             }
             self.contentInset = inset
