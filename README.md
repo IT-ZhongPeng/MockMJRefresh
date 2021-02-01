@@ -34,7 +34,7 @@ pod 'MockMJRefresh'
 
 ## Author
 
-zhaozp, 2825605856@qq.com
+nmxy, 2825605856@qq.com
 
 ## License
 
